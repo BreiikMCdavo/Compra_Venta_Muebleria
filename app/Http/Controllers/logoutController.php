@@ -11,7 +11,7 @@ class logoutController extends Controller
     public function logout(){
         Session::flush();
         Auth::logout();
-
-        return redirect()->route('login');
+        // cambio de login a ruta welcome.blade.php "panel"
+        return redirect()->route('panel');
     }
 }

@@ -170,8 +170,11 @@
 
             .cuadro img {
                 width: 100%;
-                height: auto;
-                display: block;
+                height: 200px;
+                /* altura fija */
+                object-fit: cover;
+                /* recorta la imagen para llenar el área */
+                display: block;S
             }
 
             .descripcion {
