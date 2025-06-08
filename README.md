@@ -3,6 +3,8 @@
 ![Image](https://github.com/user-attachments/assets/ced15769-d62f-495b-ac7b-b1a0e9bd638a)
 ![Image](https://github.com/user-attachments/assets/0dd4b509-ad43-43c6-827e-b61f20c5c012)
 
+![Image](https://github.com/user-attachments/assets/3f98419e-694b-4779-851e-65cc0daadfd4)
+![Image](https://github.com/user-attachments/assets/12afeb92-a0a2-427c-b118-857c84e8617e)
 # Punto de Venta para una tienda
 
 ## Dependencias
