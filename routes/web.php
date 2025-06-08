@@ -15,7 +15,7 @@ use App\Http\Controllers\roleController;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\ventaController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ReportePdfController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',[homeController::class,'index'])->name('panel');
+Route::get('/', [homeController::class, 'index'])->name('panel');
 
 Route::resources([
     'categorias' => categoriaController::class,
@@ -42,9 +42,11 @@ Route::resources([
     'profile' => profileController::class
 ]);
 
-Route::get('/login',[loginController::class,'index'])->name('login');
-Route::post('/login',[loginController::class,'login']);
-Route::get('/logout',[logoutController::class,'logout'])->name('logout');
+Route::get('/login', [loginController::class, 'index'])->name('login');
+Route::post('/login', [loginController::class, 'login']);
+Route::get('/logout', [logoutController::class, 'logout'])->name('logout');
+Route::get('/reportepdf', [App\Http\Controllers\ReportePdfController::class, 'exportPdf'])->name('reportepdf');
+
 
 Route::get('/401', function () {
     return view('pages.401');
